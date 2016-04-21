@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+	<link type="text/css" rel="stylesheet" href="doll game anthro main page css styling" />
+	<head>
+		<title>Kat's Games
+		</title>
+	</head>
+	<body>
+		<h1>Kat's Games</h1>
+		
+		<!-- this is where I do an intro into the website -->
+		<p> Hello and welcome to Kat's Games. This is where I plan to code and work on various games. There is only a WIP up (or coming up very soon) but I hope you enjoy looking around my site. 
+		</p>
+		<p> The first project I will be working on is an anthro doll game. I've been frustrated by the lack of good anthro doll games on the internet, so I figured I'd try my hand at my own. So far I've drawn up two body types, which I believe will allow the player to create a larger variety of characters. The clothes are semi-modern, with some inspired by fantasy. 
+		</p>
+	</body>
+</html>

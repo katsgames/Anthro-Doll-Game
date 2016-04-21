@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="doll game anthro actual doll game page styling.css" /> 
+		<!--links to style sheets and java script docs -->
+		<script src="jquery-1.12.0.min.js">
+		</script>
+		<script src="anthro doll game defines.js"></script>
+		<script src="doll game anthro java script.js">
+		</script>
+	</head>
+	
+	<body>
+	<!--menu -->
+		<div>
+		<a href="doll game anthro html file.html">Home</a>
+		</div>
+		<div>
+			<a href="http://theironrealm.thecomicseries.com/">My Comic</a>
+		</div>
+			<h1>Anthro Doll Game</h1>
+	<!-- canvas try -->
+		<canvas id="myCanvas" width = "700px" height = "998px"> 
+		</canvas> 
+		<ul id="ultabs"></ul>
+		<div id="tabs">
+		
+		</div>
+	<!--images for javascript file -->
+	<div class="useless">
+		<!-- backgrounds-->
+			<img class = "useless" id = "background alepolis" src="img/background alepolis copy.png" />
+			<img class = "useless" id = "background blank" src="img/background blank.png" />
+			<img class = "useless" id = "background damias room" src="img/background damias room.png" />
+			<img class = "useless" id = "background mt valentine" src="img/background mt valentine.png" />
+			<img class = "useless" id = "background uris house" src="img/background uris house.png" />
+			<img class = "useless" id = "background walled city" src="img/background walled city.png" />
+			<img class = "useless" id = "background wildy" src="img/background wildy background.png" />
+			
+		<!--bow-->
+			<img class = "useless" id = "bow" src="img/accessories bow.png" />
+		<!-- tails -->
+			<img class = "useless" id = "long haired cat tail" src="img/cat tail long hair.png" />
+			<img class = "useless" id = "short haired cat tail" src="img/cat tail short hair.png" />
+			<img class = "useless" id = "otter tail" src="img/otter tail.png" />
+			<img class = "useless" id = "wolf tail" src="img/wolf tail.png" />
+			<img class = "useless" id = "no tail" src="img/no tail.png" />
+			
+		<!--undercoat, tails-->
+			<img class = "useless" id = "long haired cat tail tail bottom" src="img/undercoats tail bottom cat long.png" />
+			<img class = "useless" id = "short haired cat tail tail bottom" src="img/undercoats tail bottom cat short.png" />
+			<img class = "useless" id = "otter tail tail bottom" src="img/undercoats tail bottom otter.png" />
+			<img class = "useless" id = "wolf tail tail bottom" src="img/undercoats tail bottom wolf.png" />
+			<img class = "useless" id = "long haired cat tail tail tip" src="img/undercoats tail tip cat long hair.png" />
+			<img class = "useless" id = "short haired cat tail tail tip" src="img/undercoats tail tip cat short hair.png" />
+			<img class = "useless" id = "otter tail tail tip" src="img/undercoats tail tip otter.png" />
+			<img class = "useless" id = "wolf tail tail tip" src="img/undercoats tail tip wolf.png" />
+		<!--overcoat, tails-->
+			<img class = "useless" id = "long haired cat tail dark tail top" src="img/overcoats dark tail cat long.png" />
+			<img class = "useless" id = "short haired cat tail dark tail top" src="img/overcoats dark tail cat short.png" />
+			<img class = "useless" id = "otter tail dark tail top" src="img/overcoats dark tail otter.png" />
+			<img class = "useless" id = "wolf tail dark tail top" src="img/overcoats dark tail wolf.png" />
+			
+		<!--spots, tails-->
+			<img class = "useless" id = "long haired cat tail calico tail dark" src="img/fur pattern calico cat tail long dark.png" />
+			<img class = "useless" id = "short haired cat tail calico tail dark" src="img/fur pattern calico cat tail short dark.png" />
+			<img class = "useless" id = "otter tail calico tail dark" src="img/fur pattern calico otter tail dark.png" />
+			<img class = "useless" id = "wolf tail calico tail dark" src="img/fur pattern calico wolf tail dark.png" />
+			<img class = "useless" id = "long haired cat tail cheetah tail" src="img/fur pattern cheetah fur pattern long hair cat tail.png" />
+			<img class = "useless" id = "otter tail cheetah tail" src="img/fur pattern cheetah fur pattern otter tail.png" />
+			<img class = "useless" id = "short haired cat tail cheetah tail" src="img/fur pattern cheetah fur pattern short hair cat.png" />
+			<img class = "useless" id = "wolf tail cheetah tail" src="img/fur pattern cheetah fur pattern wolf tail.png" />
+			<img class = "useless" id = "long haired cat tail maris spots tail" src="img/fur pattern maris spots cat tail long.png" />
+			<img class = "useless" id = "short haired cat tail maris spots tail" src="img/fur pattern maris spots cat tail short.png" />
+			<img class = "useless" id = "otter tail maris spots tail" src="img/fur pattern maris spots otter tail.png" />
+			<img class = "useless" id = "wolf tail maris spots tail" src="img/fur pattern maris spots wolf tail.png" />
+			<img class = "useless" id = "long haired cat tail ocelot tail" src="img/fur pattern ocelot cat hair tail long.png" />
+			<img class = "useless" id = "otter tail ocelot tail" src="img/fur pattern ocelot otter tail.png" />
+			<img class = "useless" id = "short haired cat tail ocelot tail" src="img/fur pattern ocelot tail cat short.png" />
+			<img class = "useless" id = "wolf tail ocelot tail" src="img/fur pattern ocelot tail wolf.png" />
+			<img class = "useless" id = "long haired cat tail snow leopard tail dark" src="img/fur pattern snow leopard cat tail long dark.png" />
+			<img class = "useless" id = "short haird cat tail snow leopard tail dark" src="img/fur pattern snow leopard cat tail short dark.png" />
+			<img class = "useless" id = "otter tail snow leopard tail dark" src="img/fur pattern snow leopard otter tail dark.png" />
+			<img class = "useless" id = "wolf tail snow leopard tail dark" src="img/fur pattern snow leopard wolf tail dark.png" />
+			<img class = "useless" id = "long haired cat tail tiger tail" src="img/fur pattern tiger pattern long hair cat tail.png" />
+			<img class = "useless" id = "otter tail tiger tail" src="img/fur pattern tiger pattern otter tail.png" />
+			<img class = "useless" id = "short haired cat tail tiger tail" src="img/fur pattern tiger pattern short hair cat.png" />
+			<img class = "useless" id = "wolf tail tiger tail" src="img/fur pattern tiger pattern wolf tail.png" />
+		<!--spots, tails second color-->
+			<img class = "useless" id = "long haired cat tail calico tail light" src="img/fur pattern calico cat tail long light.png" />
+			<img class = "useless" id = "short haired cat tail calico tail lgiht" src="img/fur pattern calico cat tail short light.png" />
+			<img class = "useless" id = "otter tail calico tail light" src="img/fur pattern calico otter tail light.png" />
+			<img class = "useless" id = "wolf tail calico tail light" src="img/fur pattern calico wolf tail light.png" />
+			<img class = "useless" id = "long haired cat tail snow leopard tail light" src="img/fur pattern snow leopard cat tail long light.png" />
+			<img class = "useless" id = "short haired cat tail snow leopard tail light" src="img/fur pattern snow leopard cat tail short light.png" />
+			<img class = "useless" id = "otter tail snow leopard tail light" src="img/fur pattern snow leopard otter tail light.png" />
+			<img class = "useless" id = "wolf tail snow leopard tail light" src="img/fur pattern snow leopard wolf tail light.png" />
+		
+		<!--lines, tails-->
+			<img class = "useless" id = "long haired cat tail lines" src="img/lines tail lines cat tail long.png" />
+			<img class = "useless" id = "short haired cat tail lines" src="img/lines tail lines cat tail.png" />
+			<img class = "useless" id = "otter tail lines" src="img/lines tail lines otter tail.png" />
+			<img class = "useless" id = "wolf tail lines" src="img/lines tail lines wolf tail.png" />
+			
+		<!--Backs of hair -->
+			<img class = "useless" id = "hair afro back" src="img/afro back.png" />
+			<img class = "useless" id = "hair wavy shoulderlength back" src="img/wavy hair shoulder lenght.png" />
+			<img class = "useless" id = "hair wavy long back" src="img/wavy hair long back.png" />
+			<img class = "useless" id = "hair straight long back" src="img/straight long hair back.png" />
+			<img class = "useless" id = "hair straight shoulderlength back" src="img/back of straight shoulder length hair.png" />
+			<img class = "useless" id = "big puff" src="img/big puff.png" />
+			<img class = "useless" id = "single bun" src="img/bun single.png" />
+			<img class = "useless" id = "buns" src="img/buns.png" />
+			<img class = "useless" id = "hair dreadlocks back" src="img/dreadlocks back.png" />
+			<img class = "useless" id = "hair jessies back" src="img/jessie's hair back.png" />
+			<img class = "useless" id = "little puffs" src="img/little puffs.png" />
+			<img class = "useless" id = "hair loose curly back" src="img/loose curly hair back.png" />
+			<img class = "useless" id = "microbraids back" src="img/microbraids back.png" />
+			<img class = "useless" id = "pigtail puffs" src="img/pigtail puffs.png" />
+			<img class = "useless" id = "straight ponytail" src="img/ponty tail straight.png" />
+			<img class = "useless" id = "straigth pigtails" src="img/straight pigtails.png"  />
+			<img class = "useless" id = "wavy pigtails" src="img/wavy pigtails.png" />
+			<img class = "useless" id = "wavy ponytail" src="img/wavy pontytail.png" />
+			<img class = "useless" id = "hair cornrows back" src="img/cornrows back.png" />
+			<img class = "useless" id = "hair no hair back" src="img/no back of hair.png" />
+			<img class = "useless" id = "no ponytail" src="img/no ponytail back.png" />
+			<img class = "useless" id = "hair shortest straight back" src="img/hair short hair new straight back.png" />
+			<img class = "useless" id = "hair shortest curly back" src="img/hair short hair new curly back.png" />
+			<img class = "useless" id = "hair shortest wavy back" src="img/hair short hair new wavy back.png" />
+			
+		<!--Bodies-->
+			<img class = "useless" id = "fat boobs" src="img/fat body boobs.png" />
+			<img class = "useless" id = "fat flat" src="img/fat body flat.png" />
+			<img class = "useless" id = "buff boobs" src="img/buff body boobs.png" />
+			<img class = "useless" id = "buff flat" src="img/buff body flat chested.png" />
+		
+		<!--undercoat, bodies-->
+			<img class = "useless" id = "buff boobs right glove" src="img/undcoat right glove.png" />
+			<img class = "useless" id = "buff flat right glove" src="img/undcoat right glove.png" />
+			<img class = "useless" id = "fat boobs boobs right glove" src="img/undcoat right glove.png" />
+			<img class = "useless" id = "fat flat right glove" src="img/undcoat right glove.png" />
+			<img class = "useless" id = "buff boobs under belly" src="img/undercoat belly buff body boobs.png" />
+			<img class = "useless" id = "buff flat under belly" src="img/undercoat belly buff flat.png" />
+			<img class = "useless" id = "fat boobs under belly" src="img/undercoat belly fat boobs.png" />
+			<img class = "useless" id = "fat flat under belly" src="img/undercoat belly fat flat.png" />
+			<img class = "useless" id = "buff boobs chest diamond" src="img/undercoat chest diamond buff boobs.png" />
+			<img class = "useless" id = "buff flat chest diamond" src="img/undercoat chest diamond buff flat.png" />
+			<img class = "useless" id = "fat flat chest diamond" src="img/undercoat chest diamond fat flat.png" />
+			<img class = "useless" id = "fat boobs chest diamond" src="img/undercot chest diamond fat boobs.png" />
+			<img class = "useless" id = "buff boobs left fingers" src="img/undercoat left fingers.png" />
+			<img class = "useless" id = "buff flat left fingers" src="img/undercoat left fingers.png" />
+			<img class = "useless" id = "fat boobs left fingers" src="img/undercoat left fingers.png" />
+			<img class = "useless" id = "fat flat left fingers" src="img/undercoat left fingers.png" />
+			<img class = "useless" id = "buff boobs left glove" src="img/undercoat left glove.png" />
+			<img class = "useless" id = "buff flat left glove" src="img/undercoat left glove.png" />
+			<img class = "useless" id = "fat boobs left glove" src="img/undercoat left glove.png" />
+			<img class = "useless" id = "fat flat left glove" src="img/undercoat left glove.png" />
+			<img class = "useless" id = "buff boobs left sock" src="img/undercoat left sock.png" />
+			<img class = "useless" id = "buff flat left sock" src="img/undercoat left sock.png" />
+			<img class = "useless" id = "fat boobs left sock" src="img/undercoat left sock.png" />
+			<img class = "useless" id = "fat flat left sock" src="img/undercoat left sock.png" />
+			<img class = "useless" id = "buff boobs left toes" src="img/undercoat left toes.png" />
+			<img class = "useless" id = "buff flat left toes" src="img/undercoat left toes.png" />
+			<img class = "useless" id = "fat boobs left toes" src="img/undercoat left toes.png" />
+			<img class = "useless" id = "fat flat left toes" src="img/undercoat left toes.png" />
+			<img class = "useless" id = "buff boobs right fingers" src="img/undercoat right fingers.png" />
+			<img class = "useless" id = "buff flat right fingers" src="img/undercoat right fingers.png" />
+			<img class = "useless" id = "fat boobs right fingers" src="img/undercoat right fingers.png" />
+			<img class = "useless" id = "fat flat right fingers" src="img/undercoat right fingers.png" />
+			<img class = "useless" id = "buff boobs right sock" src="img/undercoat right sock.png" />
+			<img class = "useless" id = "buff flat right sock" src="img/undercoat right sock.png" />
+			<img class = "useless" id = "fat boobs right sock" src="img/undercoat right sock.png" />
+			<img class = "useless" id = "fat flat right sock" src="img/undercoat right sock.png" />
+			<img class = "useless" id = "buff boobs right toes" src="img/undercoat right toes.png" />
+			<img class = "useless" id = "buff flat right toes" src="img/undercoat right toes.png" />
+			<img class = "useless" id = "fat boobs right toes" src="img/undercoat right toes.png" />
+			<img class = "useless" id = "fat flat right toes" src="img/undercoat right toes.png" />
+		
+		<!--overcoat, bodies-->
+			<img class = "useless" id = "fat boobs dark back" src="img/overcoat back fat body.png" />
+			<img class = "useless" id = "fat flat dark back" src="img/overcoat back fat body.png" />
+			<img class = "useless" id = "buff boobs dark arms" src="img/overcoat dark arms buff boobs.png" />
+			<img class = "useless" id = "buff flat dark arms" src="img/overcoat dark arms buff flat.png" />
+			<img class = "useless" id = "fat boobs dark arms" src="img/overcoat dark arms fat boobs.png" />
+			<img class = "useless" id = "fat flat dark arms" src="img/overcoat dark arms fat flat.png" />
+			<img class = "useless" id = "fat boobs dark arms half" src="img/overcoat dark arms half fat body.png" />
+			<img class = "useless" id = "fat flat dark arms half" src="img/overcoat dark arms half fat body.png" />
+			<img class = "useless" id = "buff boobs dark arms half" src="img/overcoat dark arms half buff body.png" />
+			<img class = "useless" id = "buff flat dark arms half" src="img/overcoat dark arms half buff body.png" />
+			<img class = "useless" id = "buff boobs dark legs side" src="img/overcoat dark legs side buff.png" />
+			<img class = "useless" id = "buff flat dark legs side" src="img/overcoat dark legs side buff.png" />
+			<img class = "useless" id = "fat boobs dark legs side" src="img/overcoat dark legs side fat.png" />
+			<img class = "useless" id = "fat flat dark legs side" src="img/overcoat dark legs side fat.png" />
+			<img class = "useless" id = "buff boobs dark legs" src="img/overcoat dark legs whole buff body.png" />
+			<img class = "useless" id = "buff flat dark legs" src="img/overcoat dark legs whole buff body.png" />
+			<img class = "useless" id = "fat boobs dark legs" src="img/overcoat dark legs whole fat body.png" />
+			<img class = "useless" id = "fat flat dark legs" src="img/overcoat dark legs whole fat body.png" />
+			<img class = "useless" id = "buff boobs dark back" src="img/overcoats back buff body.png" />
+			<img class = "useless" id = "buff flat dark back" src="img/overcoats back buff body.png" />
+			
+		<!--spots, bodies-->
+			<img class = "useless" id = "buff boobs calico body dark" src="img/fur pattern calico buff boobs black.png" />
+			<img class = "useless" id = "buff flat calico body dark" src="img/fur pattern calico buff flat dark.png" />
+			<img class = "useless" id = "fat boobs calico body dark" src="img/fur pattern calico fat boobs dark.png" />
+			<img class = "useless" id = "fat flat calico body dark" src="img/fur pattern calico fat flat dark.png" />
+			<img class = "useless" id = "buff boobs cheetah body" src="img/fur pattern cheetah fur pattern buff boobs.png" />
+			<img class = "useless" id = "buff flat cheetah body" src="img/fur pattern cheetah fur pattern buff flat.png" />
+			<img class = "useless" id = "fat boobs cheetah body" src="img/fur pattern cheetah fur pattern fat boobs.png" />
+			<img class = "useless" id = "fat flat cheetah body" src="img/fur pattern cheetah fur pattern fat flat.png" />
+			<img class = "useless" id = "buff boobs maris spots body" src="img/fur pattern maris spots buff body.png" />
+			<img class = "useless" id = "buff flat maris spots body" src="img/fur pattern maris spots buff body.png" />
+			<img class = "useless" id = "fat boobs maris spots body" src="img/fur pattern maris spots fat body copy.png" />
+			<img class = "useless" id = "fat flat maris spots body" src="img/fur pattern maris spots fat body copy.png" />
+			<img class = "useless" id = "buff boobs ocelot body dark" src="img/fur pattern ocelot buff body dark markings.png" />
+			<img class = "useless" id = "buff flat ocelot body dark" src="img/fur pattern ocelot buff body dark markings.png" />
+			<img class = "useless" id = "fat boobs ocelot body dark" src="img/fur pattern ocelot fat body.png" />
+			<img class = "useless" id = "fat flat ocelot body dark" src="img/fur pattern ocelot fat body.png" />
+			<img class = "useless" id = "buff boobs snow leopard body dark" src="img/fur pattern snow leopard buff body dark.png" />
+			<img class = "useless" id = "buff flat snow leopard body dark" src="img/fur pattern snow leopard buff body dark.png" />
+			<img class = "useless" id = "fat boobs snow leopard body dark" src="img/fur pattern snow leopard fat body dark.png" />
+			<img class = "useless" id = "fat flat snow leopard body dark" src="img/fur pattern snow leopard fat body dark.png" />
+			<img class = "useless" id = "fat boobs tiger body" src="img/fur pattern tiger patter fat body.png" />
+			<img class = "useless" id = "fat flat tiger body" src="img/fur pattern tiger patter fat body.png" />
+			<img class = "useless" id = "buff boobs tiger body" src="img/fur pattern tiger pattern buff body.png" />
+			<img class = "useless" id = "buff flat tiger body" src="img/fur pattern tiger pattern buff body.png" />
+			
+		<!-- spots, bodies second-->
+			<img class = "useless" id = "buff boobs calico body light" src="img/fur pattern calico buff boobs light.png" />
+			<img class = "useless" id = "buff flat calico body light" src="img/fur pattern calico buff flat light.png" />
+			<img class = "useless" id = "fat boobs calico body light" src="img/fur pattern calico fat boobs light.png" />
+			<img class = "useless" id = "fat flat calico body light" src="img/fur pattern calico fat flat light.png" />
+			<img class = "useless" id = "buff boobs ocelot body light" src="img/fur pattern ocelot buff body light markings.png" />
+			<img class = "useless" id = "buff flat ocelot body light" src="img/fur pattern ocelot buff body light markings.png" />
+			<img class = "useless" id = "fat boobs ocelot body light" src="img/fur pattern ocelot fat body light markings.png" />
+			<img class = "useless" id = "fat flat ocelot body light" src="img/fur pattern ocelot fat body light markings.png" />
+			<img class = "useless" id = "buff boobs snow leopard body light" src="img/fur pattern snow leopard buff body light.png"/>
+			<img class = "useless" id = "buff flat snow leopard body light" src="img/fur pattern snow leopard buff body light.png" />
+			<img class = "useless" id = "fat boobs snow leopard body light" src="img/fur pattern snow leopard fat body light.png" />
+			<img class = "useless" id = "fat flat snow leopard body light" src="img/fur pattern snow leopard fat body light.png" />
+			
+		<!--lines, bodies-->
+			<img class = "useless" id = "buff boobs lines" src="img/lines body lines buff boobs.png" />
+			<img class = "useless" id = "buff flat lines" src="img/lines body lines buff flat.png" />
+			<img class = "useless" id = "fat boobs lines" src="img/lines body lines fat boobs.png" />
+			<img class = "useless" id = "fat flat lines" src="img/lines body lines fat flat.png" />
+		<!-- Underwear-->
+			<img class = "useless" id = "buff boobs underwear" src="img/buff body boobs underwaer.png" />
+			<img class = "useless" id = "fat boobs underwear" src="img/fat body boobs underwear.png" />
+			<img class = "useless" id = "fat flat underwear" src="img/fat body flat underwear.png" />
+			<img class = "useless" id = "buff flat underwear" src="img/buff body flat underear.png" />
+			<img class = "useless" id = "no underwear" src="img/no underwear.png" />
+			
+		<!--Headshapes -->
+			<img class = "useless" id = "cat face mouth open" src="img/cat face mouth open.png" />
+			<img class = "useless" id = "cat face mouth shut" src="img/cat face mouth closed.png" />
+			<img class = "useless" id = "fox face mouth open" src="img/fox face mouth open.png" />
+			<img class = "useless" id = "fox face mouth shut" src="img/fox face mouth shut.png" />
+			<img class = "useless" id = "otter face mouth open" src="img/otter face mouth open.png" />
+			<img class = "useless" id = "otter face mouth shut" src="img/otter face mouth shut.png" />
+			<img class = "useless" id = "wolf face mouth open" src="img/wolf face mouth open.png" />
+			<img class = "useless" id = "wolf face mouth shut" src="img/wolf face mouth shut.png" />
+			
+		<!--undercoat, heads-->
+			<img class = "useless" id = "cat face mouth open engies face" src="img/undercoats engies face cat face open.png" />
+			<img class = "useless" id = "cat face mouth shut engies face" src="img/undercoats engies face cat face shut.png" />
+			<img class = "useless" id = "fox face mouth open engies face" src="img/undercoats engies face fox face open.png" />
+			<img class = "useless" id = "fox face mouth shut engies face" src="img/undercoats engies face fox face shut.png" />
+			<img class = "useless" id = "otter face mouth open engies face" src="img/undercoats engies face otter face open.png" />
+			<img class = "useless" id = "otter face mouth shut engies face" src="img/undercoats engies face otter face shut.png" />
+			<img class = "useless" id = "wolf face mouth open engies face" src="img/undercoats engies face wolf face open.png" />
+			<img class = "useless" id = "wolf face mouth shut engies face" src="img/undercoats engies face wolf face shut.png" />
+			<img class = "useless" id = "cat face mouth open uris face" src="img/undercoats uris face cat face open.png" />
+			<img class = "useless" id = "cat face mouth shut uris face" src="img/undercoats uris face cat face shut.png" />
+			<img class = "useless" id = "fox face mouth open uris face" src="img/undercoats uris face fox face mouth open.png" />
+			<img class = "useless" id = "fox face mouth shut uris face" src="img/undercoats uris face fox face mouth shut.png" />
+			<img class = "useless" id = "otter face mouth open uris face" src="img/undercoats uris face otter face open.png" />
+			<img class = "useless" id = "otter face mouth shut uris face" src="img/undercoats uris face otter face shut.png" />
+			<img class = "useless" id = "wolf face mouth open uris face" src="img/undercoats uris face wolf face mouth open.png" />
+			<img class = "useless" id = "wolf face mouth shut uris face" src="img/undercoats uris face wolf face mouth shut.png" />
+			
+		<!--overcoat, heads-->
+			<img class = "useless" id = "cat face mouth open head stripe" src="img/overcoats head stripe.png" />
+			<img class = "useless" id = "cat face mouth shut head stripe" src="img/overcoats head stripe.png" />
+			<img class = "useless" id = "fox face mouth open head stripe" src="img/overcoats head stripe.png" />
+			<img class = "useless" id = "fox face mouth shut head stripe" src="img/overcoats head stripe.png" />
+			<img class = "useless" id = "otter face mouth open head stripe" src="img/overcoats head stripe.png" />
+			<img class = "useless" id = "otter face mouth shut head stripe" src="img/overcoats head stripe.png" />
+			<img class = "useless" id = "wolf face mouth open head stripe" src="img/overcoats head stripe.png" />
+			<img class = "useless" id = "wolf face mouth shut head stripe" src="img/overcoats head stripe.png" />
+			<img class = "useless" id = "cat face mouth open jayes face" src="img/overcoats jayes face cat face.png" />
+			<img class = "useless" id = "cat face mouth shut jayes face" src="img/overcoats jayes face cat face.png" />
+			<img class = "useless" id = "fox face mouth open jayes face" src="img/overcoats jayes face fox face.png" />
+			<img class = "useless" id = "fox face mouth shut jayes face" src="img/overcoats jayes face fox face.png" />
+			<img class = "useless" id = "otter face mouth open jayes face" src="img/overcoats jayes face otter face.png" />
+			<img class = "useless" id = "otter face mouth shut jayes face" src="img/overcoats jayes face otter face.png" />
+			<img class = "useless" id = "wolf face mouth open jayes face" src="img/overcoats jayes face wolf face.png" />
+			<img class = "useless" id = "wolf face mouth shut jayes face" src="img/overcoats jayes face wolf face.png" />
+			
+		<!--spots, heads-->
+			<img class = "useless" id = "otter face mouth shut calico face dark" src="img/fur pattern calico face otter dark.png" />
+			<img class = "useless" id = "otter face mouth open calico face dark" src="img/fur pattern calico face otter dark.png" />
+			<img class = "useless" id = "cat face mouth shut calico face dark" src="img/fur pattern calico face cat face dark.png" />
+			<img class = "useless" id = "cat face mouth open calico face dark" src="img/fur pattern calico face cat face dark.png" />
+			<img class = "useless" id = "fox face mouth shut calico face dark" src="img/fur pattern calico face fox face dark.png" />
+			<img class = "useless" id = "fox face mouth open calico face dark" src="img/fur pattern calico face fox face dark.png"/>
+			<img class = "useless" id = "wolf face mouth shut calico face dark" src="img/fur pattern calico face wolf dark.png" />
+			<img class = "useless" id = "wolf face mouth open calico face dark" src="img/fur pattern calico face wolf dark.png" />
+			<img class = "useless" id = "cat face mouth shut cheetah face" src="img/fur pattern cheetah face cat face.png" />
+			<img class = "useless" id = "cat face mouth open cheetah face" src="img/fur pattern cheetah face cat face.png" />
+			<img class = "useless" id = "fox face mouth shut cheetah face" src="img/fur pattern cheetah face fox face.png" />
+			<img class = "useless" id = "fox face mouth open cheetah face" src="img/fur pattern cheetah face fox face.png" />
+			<img class = "useless" id = "otter face mouth shut cheetah face" src="img/fur pattern cheetah face otter face.png" />
+			<img class = "useless" id = "otter face mouth open cheetah face" src="img/fur pattern cheetah face otter face.png" />
+			<img class = "useless" id = "wolf face mouth shut cheetah face" src="img/fur patterns cheetah face wolf face.png" />
+			<img class = "useless" id = "wolf face mouth open cheetah face" src="img/fur patterns cheetah face wolf face.png" />
+			<img class = "useless" id = "cat face mouth shut maris spots face" src="img/fur pattern maris spots face cat face closed.png" />
+			<img class = "useless" id = "cat face mouth open maris spots face" src="img/fur pattern maris spots face cat face open.png" />
+			<img class = "useless" id = "fox face mouth shut maris spots face" src="img/fur pattern maris spots face fox face shut.png" />
+			<img class = "useless" id = "otter face mouth shut maris spots face" src="img/fur pattern maris spots face otter face closed.png" />
+			<img class = "useless" id = "otter face mouth open maris spots face" src="img/fur pattern maris spots face otter face open.png" />
+			<img class = "useless" id = "wolf face mouth open maris spots face" src="img/fur pattern maris spots face wolf face oepn.png" />
+			<img class = "useless" id = "wolf face mouth shut maris spots face" src="img/fur pattern maris spots face wolf face shut.png" />
+			<img class = "useless" id = "fox face mouth open maris spots face" src="img/fur pattern maris spots fox face mouth open.png" />
+			<img class = "useless" id = "cat face mouth open ocelot face" src="img/fur pattern ocelot face cat face open.png" />
+			<img class = "useless" id = "cat face mouth shut ocelot face" src="img/fur pattern ocelot face cat face.png" />
+			<img class = "useless" id = "fox face mouth open ocelot face" src="img/fur pattern ocelot face fox face open.png" />
+			<img class = "useless" id = "fox face mouth shut ocelot face" src="img/fur pattern ocelot face fox face.png" />
+			<img class = "useless" id = "otter face mouth open ocelot face" src="img/fur pattern ocelot face otter face open.png" />
+			<img class = "useless" id = "otter face mouth shut ocelot face" src="img/fur pattern ocelot face otter face.png" />
+			<img class = "useless" id = "wolf face mouth open ocelot face" src="img/fur pattern ocelot face wolf face open.png" />
+			<img class = "useless" id = "wolf face mouth shut ocelot face" src="img/fur pattern ocelot face wolf face.png" />
+			<img class = "useless" id = "cat face mouth shut snow leopard face" src="img/fur pattern snow leopard face cat face.png" />
+			<img class = "useless" id = "cat face mouth open snow leopard face" src="img/fur pattern snow leopard face cat face.png" />
+			<img class = "useless" id = "fox face mouth shut snow leopard face" src="img/fur pattern snow leopard face fox face.png" />
+			<img class = "useless" id = "fox face mouth open snow leopard face" src="img/fur pattern snow leopard face fox face.png" />
+			<img class = "useless" id = "otter face mouth shut snow leopard face" src="img/fur pattern snow leopard face otter face.png" />
+			<img class = "useless" id = "otter face mouth open snow leopard face" src="img/fur pattern snow leopard face otter face.png" />
+			<img class = "useless" id = "wolf face mouth shut snow leopard face" src="img/fur pattern snow leopard face wolf face.png" />
+			<img class = "useless" id = "wolf face mouth open snow leopard face" src="img/fur pattern snow leopard face wolf face.png" />
+			<img class = "useless" id = "cat face mouth shut tiger face" src="img/fur pattern tiger face cat face.png" />
+			<img class = "useless" id = "cat face mouth open tiger face" src="img/fur pattern tiger face cat face.png" />
+			<img class = "useless" id = "fox face mouth shut tiger face" src="img/fur pattern tiger face fox face.png" />
+			<img class = "useless" id = "fox face mouth open tiger face" src="img/fur pattern tiger face fox face.png" />
+			<img class = "useless" id = "otter face mouth shut tiger face" src="img/fur pattern tiger face otter face.png" />
+			<img class = "useless" id = "otter face mouth open tiger face" src="img/fur pattern tiger face otter face.png" />
+			<img class = "useless" id = "wolf face mouth shut tiger face" src="img/fur pattern tiger face wolf face.png" />
+			<img class = "useless" id = "wolf face mouth open tiger face" src="img/fur pattern tiger face wolf face.png" />
+		
+		<!--spots heads second-->
+			<img class = "useless" id = "cat face mouth shut calico face light" src="img/fur pattern calico face cat face light closed.png" />
+			<img class = "useless" id = "cat face mouth open calico face light" src="img/fur pattern calico face cat face light open.png" />
+			<img class = "useless" id = "fox face mouth shut calico face light" src="img/fur pattern calico face fox face light closed.png" />
+			<img class = "useless" id = "fox face mouth open calico face light" src="img/fur pattern calico face fox face light open.png" />
+			<img class = "useless" id = "otter face mouth shut calico face light" src="img/fur pattern calico face otter face light closed.png" />
+			<img class = "useless" id = "otter face mouth open calico face light" src="img/fur pattern calico face otter face light open.png" />
+			<img class = "useless" id = "wolf face mouth open calico face light" src="img/fur pattern calico face wolf face light open.png" />
+			<img class = "useless" id = "wolf face mouth shut calico face light" src="img/fur pattern calico face wolf face light.png" />
+		
+		<!--lines, heads-->
+			<img class = "useless" id = "cat face mouth shut lines" src="img/lines face liens cat closed.png" />
+			<img class = "useless" id = "cat face mouth open lines" src="img/lines face lines cat open.png" />
+			<img class = "useless" id = "fox face mouth open lines" src="img/lines face lines fox open.png" />
+			<img class = "useless" id = "fox face mouth shut lines" src="img/lines face lines fox shut.png" />
+			<img class = "useless" id = "otter face mouth shut lines" src="img/lines face lines otter face closed.png" />
+			<img class = "useless" id = "otter face mouth open lines" src="img/lines face lines otter face open.png" />
+			<img class = "useless" id = "wolf face mouth open lines" src="img/lines face lines wolf face open.png" />
+			<img class = "useless" id = "wolf face mouth shut lines" src="img/lines face lines wolf face closed.png" />
+			
+		<!-- Noses -->
+			<img class = "useless" id = "cat nose" src="img/cat nose.png" />
+			<img class = "useless" id = "fox nose" src="img/fox nose.png" />
+			<img class = "useless" id = "otter nose" src="img/otter nose.png" />
+			<img class = "useless" id = "wolf nose" src="img/wolf nose.png" />
+			
+		
+		<!-- front of hair backs-->
+			<img class = "useless" id = "hair jessies" src="img/jessies hair front.png" />
+			<img class = "useless" id = "hair wavy long" src="img/wavy hair long front.png" />
+			<img class = "useless" id = "hair wavy shoulderlength" src="img/wavy hair shoulder lenght front.png" />
+			<img class = "useless" id = "hair straight shoulderlength" src="img/straight hair front.png" />
+			<img class = "useless" id = "hair pulled back" src="img/pulled back hair.png" />
+			<img class = "useless" id = "afro front" src="img/afro front.png" />
+			<img class = "useless" id = "hair cornrows" src="img/cornrows.png" />
+			<img class = "useless" id = "hair dreadlocks" src="img/dreadlocks front.png" />
+			<img class = "useless" id = "hair microbraids" src="img/microbraids front.png" />
+			<img class = "useless" id = "hair loose curly" src="img/loose hiar front.png" />
+			<img class = "useless" id = "hair straight long" src="img/straight long hair front.png" />
+			<img class = "useless" id = "no hair hair" src="img/no hair front.png" />
+			<img class = "useless" id = "hair shortest curly" src="img/hair short hair new curly front.png" />
+			<img class = "useless" id = "hair shortest straight" src="img/hair short hair new straight front.png" />
+			<img class = "useless" id = "hair shortest wavy" src="img/hair short hair new wavy front.png" />
+			
+		<!-- cheek fluff -->
+			<img class = "useless" id = "cat cheek fluff engie" src= "img/cheek fluff engie cat face.png" />
+			<img class = "useless" id = "fox cheek fluff engie" src= "img/cheek fluff engie fox face.png" />
+			<img class = "useless" id = "otter cheek fluff engie" src= "img/cheek fluff engie otter face.png" />
+			<img class = "useless" id = "wolf cheek fluff engie" src= "img/cheek fluff engie wolf face.png" />
+			<img class = "useless" id = "cat cheek fluff haskel" src= "img/cheek fluff love cat face.png" />
+			<img class = "useless" id = "fox cheek fluff haskel" src= "img/cheek fluff love fox face.png" />
+			<img class = "useless" id = "otter cheek fluff haskel" src= "img/cheek fluff love otter face.png" />
+			<img class = "useless" id = "wolf cheek fluff haskel" src= "img/cheek fluff haskel wolf face.png" />
+			<img class = "useless" id = "cat cheek fluff damia" src= "img/cheek fluff damia cat face.png" />
+			<img class = "useless" id = "fox cheek fluff damia" src= "img/cheek fluff damia fox face.png" />
+			<img class = "useless" id = "otter cheek fluff damia" src= "img/cheek fluff damia otter face.png" />
+			<img class = "useless" id = "wolf cheek fluff damia" src= "img/cheek fluff damia wolf face.png" />
+		
+		<!--undercoat, cheek fluff-->
+			<img class = "useless" id = "cheek fluff damia uris face fluff" src="img/undercoat uris face cheek fluff damia.png" />
+			<img class = "useless" id = "cheek fluff engie uris face fluff" src="img/undercoat uris face cheek fluff engie.png" />
+			<img class = "useless" id = "cheek fluff haskel uris face fluff" src="img/undercoat uris face cheek fluff love.png" />
+		<!--overcoat, cheek fluff-->
+		<!--spots, cheek fluff-->
+			<img class = "useless" id = "cheek fluff damia calico cheeks dark" src="img/fur pattern calico cheek fluff dark damias.png" />
+			<img class = "useless" id = "cheek fluff engie calico cheeks dark" src="img/fur pattern calico cheek fluff dark.png" />
+			<img class = "useless" id = "cheek fluff haskel calico cheeks dark" src="img/fur pattern calico dark cheek fluff loves.png" />
+			<img class = "useless" id = "cheek fluff damia maris spots cheeks" src="img/fur pattern maris spots cheek fluff damia.png" />
+			<img class = "useless" id = "cheek fluff engie maris spots cheeks" src="img/fur pattern maris spots cheek fluff engie.png" />
+			<img class = "useless" id = "cheek fluff haskel maris spots cheeks" src="img/fur pattern maris spots cheek fluff love.png" />
+		<!--spots, cheek fluff second-->
+			<img class = "useless" id = "cheek fluff damia calico cheeks light" src="img/fur pattern calico cheek fluff light damias.png" />
+			<img class = "useless" id = "cheek fluff haskel calico cheeks light" src="img/fur pattern calico cheek fluff light loves.png" />
+			<img class = "useless" id = "cheek fluff engie calico cheeks light" src="img/fur pattern calico light engies.png" />
+			
+		<!--Ears -->
+			<img class = "useless" id = "ears cat down" src="img/cat ears down.png" />
+			<img class = "useless" id = "ears cat up" src="img/cat ears up.png" />
+			<img class = "useless" id = "ears wolf up" src="img/dog ears up.png" />
+			<img class = "useless" id = "ears lynx down" src="img/lynx ears down.png" />
+			<img class = "useless" id = "ears lynx up" src="img/lynx ears up.png" />
+			<img class = "useless" id = "ears otter" src="img/otter ears.png" />
+			<img class = "useless" id = "ears wolf down" src="img/wolf ears down.png" />
+			
+		<!--undercoat, inside of ears-->
+			<img class = "useless" id = "lynx ears down inside" src="img/lynx ears down inside.png" />
+			<img class = "useless" id = "lynx ears up inside" src="img/lynx ears up inside.png" />
+			<img class = "useless" id = "wolf ears down inside" src="img/wolf ears down inside.png" />
+			<img class = "useless" id = "wolf ears up inside" src="img/dog ears up inside.png" />
+			<img class = "useless" id = "cat ears down inside" src="img/cat ears down inside.png" />
+			<img class = "useless" id = "cat ears up inside" src="img/cat ears inside ear up.png" />
+			<img class = "useless" id = "no inside ear" src="img/no inside ear.png" />
+			
+		<!--overcoat, ears-->
+			<img class = "useless" id = "ears cat down dark ears" src="img/overcoat dark ears cat down.png" />
+			<img class = "useless" id = "ears cat up dark ears" src="img/overcoat dark ears cat up.png" />
+			<img class = "useless" id = "ears lynx down dark ears" src="img/overcoat dark ears lynx ears down.png" />
+			<img class = "useless" id = "ears lynx up dark ears" src="img/overcoat dark ears lyxn up.png" />
+			<img class = "useless" id = "ears otter dark ears" src="img/overcoat dark ears otter.png" />
+			<img class = "useless" id = "ears wolf down dark ears" src="img/overcoat dark ears wolf ears down.png" />
+			<img class = "useless" id = "ears wolf up dark ears" src="img/overcoat dark ears wolf up.png" />
+			
+		<!--spots ears-->
+			<img class = "useless" id = "ears cat down calico ears" src="img/fur pattern calico ears cat ears down.png" />
+			<img class = "useless" id = "ears cat up calico ears" src="img/fur pattern calico ears cat ears up dark.png" />
+			<img class = "useless" id = "ears lynx down calico ears" src="img/fur pattern calico ears lynx ears down.png" />
+			<img class = "useless" id = "ears lynx up calico ears" src="img/fur pattern calico ears lynx ears.png" />
+			<img class = "useless" id = "ears otter calico ears" src="img/fur pattern calico ears otter ears.png" />
+			<img class = "useless" id = "ears wolf down calico ears" src="img/fur pattern calico ears wolf down.png" />
+			<img class = "useless" id = "ears wolf up calico ears" src="img/fur pattern calico ears wolf ears up.png" />
+			<img class = "useless" id = "ears cat up cheetah ears" src="img/fur pattern cheetah ears cat ears.png" />
+			<img class = "useless" id = "ears cat down cheetah ears" src="img/no inside ear.png" />
+			<img class = "useless" id = "ears lynx up cheetah ears" src="img/fur pattern cheetah ears lynx ears.png" />
+			<img class = "useless" id = "ears lynx down cheetah ears" src="img/no inside ear.png" />
+			<img class = "useless" id = "ears otter cheetah ears" src="img/no inside ear.png" />
+			<img class = "useless" id = "ears wolf up cheetah ears" src="img/fur pattern cheetah ears wolf ears.png" />
+			<img class = "useless" id = "ears wolf down cheetah ears" src="img/no inside ear.png" />
+			<img class = "useless" id = "ears cat down snow leopard ears" src="img/fur pattern snow leopard ears cat down.png" />
+			<img class = "useless" id = "ears cat up snow leopard ears" src="img/fur pattern snow leopard ears cat up.png" />
+			<img class = "useless" id = "ears lynx down snow leopard ears" src="img/fur pattern snow leopard ears lynx down.png" />
+			<img class = "useless" id = "ears otter snow leopard ears" src="img/fur pattern snow leopard ears otter ears.png" />
+			<img class = "useless" id = "ears wolf down snow leopard ears" src="img/fur pattern snow leopard ears wolf down.png" />
+			<img class = "useless" id = "ears wolf up snow leopard ears" src="img/fur pattern snow leopard ears wolf up.png" />
+			<img class = "useless" id = "ears lynx up snow leopard ears" src="img/fur pattern snow leopard lynx up.png" />
+			
+		<!--Eyes-->
+			<img class = "useless" id = "candis eyes whites" src="img/candi eye white.png" />
+			<img class = "useless" id = "damias eyes whites" src="img/damias eyes whites of eye.png" />
+			<img class = "useless" id = "engies eyes whites" src="img/engie eye white.png" />
+			<img class = "useless" id = "jessies eyes whites" src="img/jessies eyes whites.png" />
+			<img class = "useless" id = "sashkas eyes whites" src="img/sashkas eyes whites of efeys.png" />
+			<img class = "useless" id = "sashkas eyes base color" src="img/sashkas eyes base color.png" />
+			<img class = "useless" id = "jessies eyes base color" src="img/jessies eyes base color.png" />
+			<img class = "useless" id = "engies eyes base color" src="img/engie eye base color.png" />
+			<img class = "useless" id = "damias eyes base color" src="img/damias eyes base color.png" />
+			<img class = "useless" id = "candis eyes base color" src="img/candi eye base color.png" />
+		
+		<!-- glasses-->
+			<img class = "useless" id = "glasses oval" src="img/accessories glasses oval.png" />
+			<img class = "useless" id = "glasses square" src="img/accessories glasses square.png" />
+			<img class = "useless" id = "glasses sun" src="img/accessories glasses sun.png" />
+			<img class = "useless" id = "glasses tiny" src="img/accesssories glasses tiny.png" />
+			
+		<!-- Mouths-->
+			<img class = "useless" id = "fox face mouth open growl" src="img/ fox snarl dont recolor.png" />
+			<img class = "useless" id = "fox face mouth open smile mouth open" src="img/fox big smile dont recolor.png" />
+			<img class = "useless" id = "cat face mouth shut frown" src="img/cat frown.png" />
+			<img class = "useless" id = "cat face mouth open growl" src="img/cat growl dont recolor.png" />
+			<img class = "useless" id = "cat face mouth shut neutral" src="img/cat neutral.png" />
+			<img class = "useless" id = "cat face mouth shut smile mouth closed" src="img/cat smile.png" />
+			<img class = "useless" id = "cat face mouth open smile mouth open" src="img/cat big smile dont recolor.png" />
+			<img class = "useless" id = "fox face mouth shut frown" src="img/fox frown.png" />
+			<img class = "useless" id = "fox face mouth shut neutral" src="img/fox neutral.png" />
+			<img class = "useless" id = "fox face mouth shut smile mouth closed" src="img/fox smile.png" />
+			<img class = "useless" id = "otter face mouth open smile mouth open" src="img/otter big happy dont recolor.png" />
+			<img class = "useless" id = "otter face mouth shut frown" src="img/otter frown.png" />
+			<img class = "useless" id = "otter face mouth shut neutral" src="img/otter neutral.png" />
+			<img class = "useless" id = "otter face mouth shut smile mouth closed" src="img/otter smile.png" />
+			<img class = "useless" id = "otter face mouth open growl" src="img/otter snarl.png" />
+			<img class = "useless" id = "wolf face mouth shut frown" src="img/wolf frown.png" />
+			<img class = "useless" id = "wolf face mouth open growl" src="img/wolf growl dont recolor.png" />
+			<img class = "useless" id = "wolf face mouth shut neutral" src="img/wolf neutral.png" />
+			<img class = "useless" id = "wofl face mouth open smile mouth open" src="img/wolf smile big dont recolor.png" />
+			<img class = "useless" id = "wolf face mouth shut smile closed" src="img/wolf smile.png" />
+			
+		<!--eyebrows-->
+			<img class = "useless" id = "thick angry" src="img/angry thick eeybrows.png" />
+			<img class = "useless" id = "thin angry" src="img/angry thin eeybrows.png" />
+			<img class = "useless" id = "thick flat" src="img/flat what htick eyebrows.png" />
+			<img class = "useless" id = "thin flat" src="img/flat what think eyebrows.png" />
+			<img class = "useless" id = "thick smile" src="img/happy thick eyebrows.png" />
+			<img class = "useless" id = "thin smile" src="img/happy thin eyebrows.png" />
+			<img class = "useless" id = "thick sad" src="img/sad thick eyebrows.png" />
+			<img class = "useless" id = "thin sad" src="img/sad thin eeybrows.png" />
+			<img class = "useless" id = "no eyebrows" src="img/no eyebrows.png" />
+		
+		<!-- leggings -->
+			<img class = "useless" id = "buff boobs fishnets" src="img/leggings fish nets buff.png" />
+			<img class = "useless" id = "buff flat fishnets" src="img/leggings fish nets buff.png" />
+			<img class = "useless" id = "fat boobs fishnets" src="img/leggings fish nets fat.png" />
+			<img class = "useless" id = "fat flat fishnets" src="img/leggings fish nets fat.png" />
+			<img class = "useless" id = "buff boobs leg warmers" src="img/leggings leg warmers.png" />
+			<img class = "useless" id = "buff flat leg warmers" src="img/leggings leg warmers.png" />
+			<img class = "useless" id = "fat boobs leg warmers" src="img/leggings leg warmers.png" />
+			<img class = "useless" id = "fat flat leg warmers" src="img/leggings leg warmers.png" />
+			<img class = "useless" id = "buff boobs leggings" src="img/leggings real buff.png" />
+			<img class = "useless" id = "buff flat leggings" src="img/leggings real buff.png" />
+			<img class = "useless" id = "fat boobs leggings" src="img/leggings real fat.png" />
+			<img class = "useless" id = "fat flat leggings" src="img/leggings real fat.png" />
+			<img class = "useless" id = "buff boobs stockings" src="img/leggings stockings see through buff.png" />
+			<img class = "useless" id = "buff flat stockings" src="img/leggings stockings see through buff.png" />
+			<img class = "useless" id = "fat boobs stockings" src="img/leggings stockings see through fat.png" />
+			<img class = "useless" id = "fat flat stockings" src="img/leggings stockings see through fat.png" />
+			<img class = "useless" id = "buff boobs thigh highs" src="img/leggings thigh highs buff.png" />
+			<img class = "useless" id = "buff flat thigh highs" src="img/leggings thigh highs buff.png" />
+			<img class = "useless" id = "fat boobs thigh highs" src="img/leggings thigh highs fat.png" />
+			<img class = "useless" id = "fat flat thigh highs" src="img/leggings thigh highs fat.png" />
+			<!--<img class = "useless" id = "no leggings or stockings" src="img/no leggings.png" /> -->
+			
+		<!-- tight shirts -->
+			<img class = "useless" id = "buff boobs bikini" src="img/tight shirts bikini buff boobs.png" />
+			<img class = "useless" id = "buff flat bikini" src="img/tight shirts bikini buff flat.png" />
+			<img class = "useless" id = "fat boobs bikini" src="img/tight shirts bikini fat boobs.png" />
+			<img class = "useless" id = "fat flat bikini" src="img/tight shirts bikini fat flat.png" />
+			<img class = "useless" id = "buff boobs long sleeved shirt" src="img/tight shirts long sleeved shirt buff boobs.png" />
+			<img class = "useless" id = "buff flat long sleeved shirt" src="img/tight shirts long sleeved shirt buff flat.png" />
+			<img class = "useless" id = "fat boobs long sleeved shirt" src="img/tight shirts long sleeved shirt fat boobs.png" />
+			<img class = "useless" id = "fat flat long sleeved shirt" src="img/tight shirts long sleeved shirt fat flat.png" />
+			<img class = "useless" id = "buff boobs t shirt" src="img/tight shirts t shirt buff boobs.png" />
+			<img class = "useless" id = "buff flat t shirt" src="img/tight shirts t shirt buff flat.png" />
+			<img class = "useless" id = "fat boobs t shirt" src="img/tight shirts t shirt fat boobs.png" />
+			<img class = "useless" id = "fat flat t shirt" src="img/tight shirts t shirt fat flat.png" />
+			<img class = "useless" id = "buff boobs tank top" src="img/tight shirts tank top buff boobs.png" />
+			<img class = "useless" id = "buff flat tank top" src="img/tight shirts tank top buff flat.png" />
+			<img class = "useless" id = "fat boobs tank top" src="img/tight shirts tank top fat boobs.png" />
+			<img class = "useless" id = "fat flat tank top" src="img/tight shirts tank top fat flat.png" />
+			<img class = "useless" id = "buff boobs tube top" src="img/tight shirts tube top buff boobs.png" />
+			<img class = "useless" id = "buff flat tube top" src="img/tight shirts tube top buff flat.png" />
+			<img class = "useless" id = "fat boobs tube top" src="img/tight shirts tube top fat boobs.png" />
+			<img class = "useless" id = "fat flat tube top" src="img/tight shirts tube top fat flat.png" />
+			<!--<img class = "useless" id = "no tight shirt" src="img/no tight shirt.png" />-->
+		
+	
+		<!-- gloves -->
+			<img class = "useless" id = "buff boobs gloves sashkas" src="img/glove sashkas buff.png" />
+			<img class = "useless" id = "buff flat gloves sashkas" src="img/glove sashkas buff.png" />
+			<img class = "useless" id = "fat boobs gloves sashkas" src="img/glove sashkas fat.png" />
+			<img class = "useless" id = "fat flat gloves sashkas" src="img/glove sashkas fat.png" />
+			<img class = "useless" id = "buff boobs gloves fancy" src="img/gloves fancy high buff boobs.png" />
+			<img class = "useless" id = "buff flat gloves fancy" src="img/gloves fancy high buff flat.png" />
+			<img class = "useless" id = "fat boobs gloves fancy" src="img/gloves fancy high fat boobs.png" />
+			<img class = "useless" id = "fat flat gloves fancy" src="img/gloves fancy high fat flat.png" />
+			<img class = "useless" id = "buff boobs regular gloves" src="img/gloves regular gloves.png" 
+			<img class = "useless" id = "buff flat regular gloves" src="img/gloves regular gloves.png" />
+			<img class = "useless" id = "fat boobs regular gloves" src="img/gloves regular gloves.png" />
+			<img class = "useless" id = "fat flat regular gloves" src="img/gloves regular gloves.png" />
+			<img class = "useless" id = "buff boobs gloves vestas" src="img/gloves vestas.png" />
+			<img class = "useless" id = "buff flat gloves vestas" src="img/gloves vestas.png" />
+			<img class = "useless" id = "fat boobs gloves vestas" src="img/gloves vestas.png" />
+			<img class = "useless" id = "fat flat gloves vestas" src="img/gloves vestas.png" />
+			<!--<img class = "useless" id = "no gloves" src="img/no gloves.png" />-->
+		
+		<!--dresses -->
+			<img class = "useless" id = "fat flat sleeved dress" src="img/sleeved dress fat flat.png" />
+			<img class = "useless" id = "buff boobs backless dress" src="img/dress backless dress base color buff boobs.png" />
+			<img class = "useless" id = "buff flat backless dress" src="img/dress backless dress base color buff flat.png" />
+			<img class = "useless" id = "fat boobs backless dress" src="img/dress backless dress base color fat boobs.png" />
+			<img class = "useless" id = "fat flat backless dress" src="img/dress backless dress base color fat flat.png" />
+			<img class = "useless" id = "buff boobs jessies dress" src="img/dress jessies dress buff boobs.png" />
+			<img class = "useless" id = "buff flat jessies dress" src="img/dress jessies dress buff flat.png" />
+			<img class = "useless" id = "fat boobs jessies dress" src="img/dress jessies dress fat boobs.png" />
+			<img class = "useless" id = "fat flat jessies dress" src="img/dress jessies dress fat flat.png" />
+			<img class = "useless" id = "buff boobs lacy dress" src="img/dress lacy dress base color buff boobs.png" />
+			<img class = "useless" id = "buff flat lacy dress" src="img/dress lacy dress base color buff flat.png" />
+			<img class = "useless" id = "fat boobs lacy dress" src="img/dress lacy dress base color fat boobs.png" />
+			<img class = "useless" id = "fat flat lacy dress" src="img/dress lacy dress base color fat flat.png" />
+			<img class = "useless" id = "buff boobs one strap dress" src="img/dress one strap dress buff boobs.png" />
+			<img class = "useless" id = "buff flat one strap dress" src="img/dress one strap dress buff flat.png" />
+			<img class = "useless" id = "fat boobs one strap dress" src="img/dress one strap dress fat boobs.png" />
+			<img class = "useless" id = "fat flat one strap dress" src="img/dress one strap dress fat flat.png" />
+			<img class = "useless" id = "buff boobs plain dress" src= "img/dress plain dress buff boobs.png" />
+			<img class = "useless" id = "buff flat plain dress" src="img/dress plain dress buff flat.png" />
+			<img class = "useless" id = "fat boobs plain dress" src="img/dress plain dress fat boobs.png" />
+			<img class = "useless" id = "fat flat plain dress" src="img/dress plain dress fat flat.png" />
+			<img class = "useless" id = "buff boobs poofy dress" src="img/dress poofy dress main color buff boobs.png" />
+			<img class = "useless" id = "buff flat poofy dress" src="img/dress poofy dress main color buff flat.png" />
+			<img class = "useless" id = "fat boobs poofy dress" src="img/dress poofy dress main color fat boobs.png" />
+			<img class = "useless" id = "fat flat poofy dress" src="img/dress poofy dress main color fat flat.png" />
+			<img class = "useless" id = "sack dress for the buff body with breasts" src="img/dress sack dress buff boobs.png" />
+			<img class = "useless" id = "sack dress for the buff flatchested body" src="img/dress sack dress buff flat.png" />
+			<img class = "useless" id = "sack dress for the fat body with breasts" src="img/dress sack dress fat boobs.png" />
+			<img class = "useless" id = "sack dress for the fat flatchested body" src="img/dress sack dress fat flat.png" />
+			<img class = "useless" id = "buff boobs sleeved dress" src="img/dress sleeved dress buff boobs.png" />
+			<img class = "useless" id = "buff flat sleeved dress" src="img/dress sleeved dress buff flat.png" />
+			<img class = "useless" id = "fat boobs sleeved dress" src="img/dress sleeved dress fat boobs.png" />
+			<!--<img class = "useless" id = "no dress" src="img/no dress.png" />-->
+			
+			
+		<!--secondary dress colors -->
+			<img class = "useless" id = "buff boobs backless dress dress trim" src="img/dress backless dress fancy color buff boobs.png" />
+			<img class = "useless" id = "buff flat backless dress dress trim" src="img/dress backless dress fancy color buff flat.png" />
+			<img class = "useless" id = "fat boobs backless dress dress trim" src="img/dress backless dress fancy color fat boobs.png" />
+			<img class = "useless" id = "fat flat backless dress dress trim" src="img/dress backless dress fancy color fat flat.png" />
+			<img class = "useless" id = "buff boobs lacy dress dress trim" src="img/dress lacy dress lace color buff boobs.png" />
+			<img class = "useless" id = "buff flat lacy dress dress trim" src="img/dress lacy dress lace color buff flat.png" />
+			<img class = "useless" id = "fat boobs lacy dress dress trim" src="img/dress lacy dress lace color fat boobs.png" />
+			<img class = "useless" id = "fat flat lacy dress dress trim" src="img/dress lacy dress lace color fat flat.png" />
+			<img class = "useless" id = "buff boobs poofy dress dress trim" src="img/dress poofy dress secondary color buff boobs.png" />
+			<img class = "useless" id = "buff flat poofy dress dress trim" src="img/dress poofy dress secondary color buff flat.png" />
+			<img class = "useless" id = "fat boobs poofy dress dress trim" src="img/dress poofy dress secondary color fat boobs.png" />
+			<img class = "useless" id = "fat flat poofy dress dress trim" src="img/dress poofy dress secondary color fat flat.png" />
+			<!--<img class = "useless" id = "no secondary dress color" src="img/no second dress pattern.png" />-->
+		
+		<!--skirts-->
+			<img class = "useless" id = "buff boobs cargo" src="img/skirts cargo pants buff.png" />
+			<img class = "useless" id = "buff flat cargo" src="img/skirts cargo pants buff.png" />
+			<img class = "useless" id = "fat boobs cargo" src="img/skirts cargo pants fat.png" />
+			<img class = "useless" id = "fat flat cargo" src="img/skirts cargo pants fat.png" />
+			<img class = "useless" id = "buff boobs jean shorts" src="img/skirts jean shorts buff.png" />
+			<img class = "useless" id = "buff flat jean shorts" src="img/skirts jean shorts buff.png" />
+			<img class = "useless" id = "fat boobs jean shorts" src="img/skirts jean shorts fat.png" />
+			<img class = "useless" id = "fat flat jean shorts" src="img/skirts jean shorts fat.png" />
+			<img class = "useless" id = "buff boobs jeans" src="img/skirts jeans buff.png" />
+			<img class = "useless" id = "buff flat jeans" src="img/skirts jeans buff.png" />
+			<img class = "useless" id = "fat boobs jeans" src="img/skirts jeans fat.png" />
+			<img class = "useless" id = "fat flat jeans" src="img/skirts jeans fat.png" />
+			<img class = "useless" id = "buff boobs poofy skirt" src="img/skirts poofy skirt base color buff.png" />
+			<img class = "useless" id = "buff flat poofy skirt" src="img/skirts poofy skirt base color buff.png" />
+			<img class = "useless" id = "fat boobs poofy skirt" src="img/skirts poofy skirt base color fat.png" />
+			<img class = "useless" id = "fat boobs poofy skirt" src="img/skirts poofy skirt base color fat.png" />
+			<img class = "useless" id = "buff boobs tight skirt" src="img/skirts tight skirt buff.png" />
+			<img class = "useless" id = "buff flat tight skirt" src="img/skirts tight skirt buff.png" />
+			<img class = "useless" id = "fat boobs tight skirt" src="img/skirts tight skirt fat.png" />
+			<img class = "useless" id = "fat boobs tight skirt" src="img/skirts tight skirt fat.png" />
+			<!--<img class = "useless" id = "no skirt" src="img/skirts no skirt.png" />-->
+		
+		<!-- skirt patterns -->
+			<img class = "useless" id = "buff boobs poofy skirt skirt trim" src="img/skirts poofy skirt lace color buff.png" />
+			<img class = "useless" id = "buff flat poofy skirt skirt trim" src="img/skirts poofy skirt lace color buff.png" />
+			<img class = "useless" id = "fat boobs poofy skirt skirt trim" src="img/skirts poofy skirt lace color fat.png" />
+			<img class = "useless" id = "fat flat poofy skirt skirt trim" src="img/skirts poofy skirt lace color fat.png" />
+			<!--<img class = "useless" id = "no skirt pattern" src="img/no skirt pattern.png" /> -->
+			
+		<!--looser shirts-->
+			<img class = "useless" id = "buff boobs knit shirt" src="img/looser clothes knit shirt buff boobs.png" />
+			<img class = "useless" id = "buff flat knit shirt" src="img/looser clothes knit shirt buff flat.png" />
+			<img class = "useless" id = "fat boobs knit shirt" src="img/looser clothes knit shirt fat boobs.png" />
+			<img class = "useless" id = "fat flat knit shirt" src="img/looser clothes knit shirt fat flat.png" />
+			<img class = "useless" id = "buff boobs loose t shirt" src="img/looser clothes loose t shirt buff boobs.png" />
+			<img class = "useless" id = "buff flat loose t shirt" src="img/looser clothes loose t shirt buff flat.png" />
+			<img class = "useless" id = "fat boobs loose t shirt" src="img/looser clothes loose t shirt fat boobs.png" />
+			<img class = "useless" id = "fat flat loose t shirt" src="img/looser clothes loose t shirt fat flat.png" />
+			<img class = "useless" id = "buff boobs overbust corset" src="img/looser clothes overbust corset boobs.png" />
+			<img class = "useless" id = "buff flat overbust corset" src="img/looser clothes overbust corset buff flat.png" />
+			<img class = "useless" id = "fat boobs overbust corset" src="img/looser clothes overbust corset fat boobs.png" />
+			<img class = "useless" id = "fat flat overbust corset" src="img/looser clothes overbust corset fat flat.png" />
+			<img class = "useless" id = "buff boobs rib shirt" src="img/looser clothes rib shirt buff boobs.png" />
+			<img class = "useless" id = "buff flat rib shirt" src="img/looser clothes rib shirt buff flat.png" />
+			<img class = "useless" id = "fat boobs rib shirt" src="img/looser clothes rib shirt fat boobs.png" />
+			<img class = "useless" id = "fat flat rib shirt" src="img/looser clothes rib shirt fat flat.png" />
+			<img class = "useless" id = "buff boobs shawl" src="img/looser clothes shawl.png" />
+			<img class = "useless" id = "buff flat shawl" src="img/looser clothes shawl.png" />
+			<img class = "useless" id = "fat boobs shawl" src="img/looser clothes shawl.png" />
+			<img class = "useless" id = "fat flat shawl" src="img/looser clothes shawl.png" />
+			<img class = "useless" id = "buff boobs sweatshirt" src="img/looser clothes sweatshirt buff boobs.png" />
+			<img class = "useless" id = "buff flat sweatshirt" src="img/looser clothes sweatshirt buff flat.png" />
+			<img class = "useless" id = "fat boobs sweatshirt" src="img/looser clothes sweatshirt fat boobs.png" />
+			<img class = "useless" id = "fat flat sweatshirt" src="img/looser clothes sweatshirt fat flat.png" />
+			<img class = "useless" id = "buff boobs underbust corset" src="img/looser clothes underbust corset buff.png" />
+			<img class = "useless" id = "buff flat underbust corset" src="img/looser clothes underbust corset buff.png" />
+			<img class = "useless" id = "fat boobs underbust corset" src="img/looser clothes underbust corset fat.png" />
+			<img class = "useless" id = "fat flat underbust corset" src="img/looser clothes underbust corset fat.png" />
+			<!--<img class = "useless" id = "no shirt" src="img/no loose shirt.png" />-->
+			
+		<!-- armour tops-->
+			<img class = "useless" id = "buff boobs bullet proof vest" src="img/armour top bulletproof vest buff boobs.png" />
+			<img class = "useless" id = "buff flat bullet proof vest" src="img/armour top bulletproof vest buff flat.png" />
+			<img class = "useless" id = "fat boobs bullet proof vest" src="img/armour top bulletproof vest fat boobs.png" />
+			<img class = "useless" id = "fat flat bullet proof vest" src="img/armour top bulletproof vest fat flat.png" />
+			<img class = "useless" id = "buff boobs chainmail top" src="img/armour top chainmail buff boobs base color.png" />
+			<img class = "useless" id = "buff flat chainmail top" src="img/armour top chainmail buff flat base color.png" />
+			<img class = "useless" id = "fat boobs chainmail top" src="img/armour top chainmail fat boobs base color.png" />
+			<img class = "useless" id = "fat flat chainmail top" src="img/armour top chainmail fat flat base color.png" />
+			<img class = "useless" id = "buff boobs armored crop top" src="img/armour top crop top buff boobs metal.png" />
+			<img class = "useless" id = "buff flat armored crop top" src="img/armour top crop top buff flat metal.png" />
+			<img class = "useless" id = "fat boobs armored crop top" src="img/armour top crop top fat boobs metal.png" />
+			<img class = "useless" id = "fat flat armored crop top" src="img/armour top crop top fat flat metal.png" />
+			<img class = "useless" id = "buff boobs sashkas armor top" src="img/armour top sashkas top buff boobs base.png" />
+			<img class = "useless" id = "buff flat sashkas armor top" src="img/armour top sashkas top buff flat base.png" />
+			<img class = "useless" id = "fat boobs sashkas armor top" src="img/armour top sashkas top fat boobs base.png" />
+			<img class = "useless" id = "fat flat sashkas armor top" src="img/armour top sashkas top fat flat base.png" />
+			<img class = "useless" id = "buff boobs sophias armor top" src="img/armour top sophias top buff boobs metal.png" />
+			<img class = "useless" id = "buff flat sophias armor top" src="img/armour top sophias top buff flat base.png" />
+			<img class = "useless" id = "fat boobs sophias armor top" src="img/armour top sophias top fat boobs metal.png" />
+			<img class = "useless" id = "fat flat sophias armor top" src="img/armour top sophias top fat flat base color.png" />
+			<!--<img class = "useless" id = "no armor top" src="img/no armor top.png" />-->
+			
+		<!--armour tops secondary colors/lowlights -->
+			<img class = "useless" id = "buff boobs chainmail top armor top second" src="img/armour top chainmail buff boobs lowlights.png" />
+			<img class = "useless" id = "buff flat chainmail top armor top second" src="img/armour top chainmail buff flat lowlights.png" />
+			<img class = "useless" id = "fat boobs chainamil top armor top second" src="img/armour top chainmail fat boobs lowlights.png" />
+			<img class = "useless" id = "fat flat chainmail top armor top second" src="img/armour top chainmail fat flat lowlights.png" />
+			<img class = "useless" id = "buff boobs armored crop top armor top second" src="img/armour top crop top buff boobs straps.png" />
+			<img class = "useless" id = "buff flat armored crop top armor top second" src="img/armour top crop top buff flat straps.png" />
+			<img class = "useless" id = "fat boobs armored crop top armor top second" src="img/armour top crop top fat boobs straps.png" />
+			<img class = "useless" id = "fat flat armored crop top armor top second" src="img/armour top crop top fat flat straps.png" />
+			<img class = "useless" id = "buff boobs sashkas armor top armor top second" src="img/armour top sashkas top buff boobs straps.png" />
+			<img class = "useless" id = "buff flat sashkas armor top armor top second" src="img/armour top sashkas top buff flat straps.png" />
+			<img class = "useless" id = "fat boobs sashkas armor top armor top second" src="img/armour top sashkas top fat boobs straps.png" />
+			<img class = "useless" id = "fat flat sashkas armor top armor top second" src="img/armour top sashkas top fat flat straps.png" />
+			<img class = "useless" id = "buff boobs sophias armor top armor top second" src="img/armour top sophias top buff boobs cloth.png" />
+			<img class = "useless" id = "fat boobs sophias armor top armor top second" src="img/armour top sophias top fat boobs cloth.png" />
+			<img class = "useless" id = "fat flat sophias armor top armor top second" src="img/armour top sophias top fat flat cloth.png" />
+			<img class = "useless" id = "buff flat sophias armor top armor top second" src="img/armour top sophias top buff flat cloth.png" />
+			<!--<img class = "useless" id = "no secondary armor top color" src="img/no secondary armor top pattern.png" />-->
+
+		<!-- armour tops tretiary colors/ highlights -->
+			<img class = "useless" id = "buff boobs chainmail top armor top third" src="img/armour top chainmail buff boobs highlights.png" />
+			<img class = "useless" id = "buff flat chainmail top armor top third" src="img/armour top chainmail buff flatt highlights.png" />
+			<img class = "useless" id = "fat boobs chainmail top armor top third" src="img/armour top chainmail fat boobs highlights.png" />
+			<img class = "useless" id = "fat flat chainmail top armor top third" src="img/armour top chainmail fat flat highlights.png" />
+			<img class = "useless" id = "buff boobs sophias armor top armor top third" src="img/armour top sophias top buff boobs trim.png" />
+			<img class = "useless" id = "buff flat sophias armor top armor top third" src="img/armour top sophias top buff flat trim.png" />
+			<img class = "useless" id = "fat boobs sophias armor top armor top third" src="img/armour top sophias top fat boobs trim.png" />
+			<img class = "useless" id = "fat flat sophias armor top armor top third" src="img/armour top sophias top fat flat trim.png" />
+			<!--<img class = "useless" id = "no third armor top color" src="img/no third armor top pattern.png" />-->
+			
+		<!--armour bottoms -->
+			<img class = "useless" id = "fat boobs chainskirt" src="img/armour chain skirt base color fat.png" />
+			<img class = "useless" id = "fat flat chainskirt" src="img/armour chain skirt base color fat.png" />
+			<img class = "useless" id = "buff boobs chainskirt" src="img/armour chain skirt base color.png" />
+			<img class = "useless" id = "buff flat chainskirt" src="img/armour chain skirt base color.png" />
+			<img class = "useless" id = "buff boobs sophias armor legs" src="img/armour sophias legs buff metal color.png" />
+			<img class = "useless" id = "buff flat sophias armor legs" src="img/armour sophias legs buff metal color.png" /> 			
+			<img class = "useless" id = "fat boobs sophias armor legs" src="img/armour sophias legs fat metal color.png" />
+			<img class = "useless" id = "fat flat sophias armor legs" src="img/armour sophias legs fat metal color.png" />
+			<img class = "useless" id = "buff boobs thigh pads" src="img/armour thigh pads buff.png" />
+			<img class = "useless" id = "buff flat thigh pads" src="img/armour thigh pads buff.png" />
+			<img class = "useless" id = "fat boobs thigh pads" src="img/armour thigh pads.png" />
+			<img class = "useless" id = "fat flat thigh pads" src="img/armour thigh pads.png" />
+			<!--<img class = "useless" id = "no armor bottom" src="img/no armor bottom.png" />-->
+			
+		<!-- armour secondary / lowlights -->
+			<img class = "useless" id = "buff boobs chainskirt armor bottom second" src="img/armour chain skirt low lights buff.png" />
+			<img class = "useless" id = "buff flat chainskirt armor bottom second" src="img/armour chain skirt low lights buff.png" />
+			<img class = "useless" id = "fat boobs chainskirt armor bottom second" src="img/armour chain skirt lowlights fat.png" />
+			<img class = "useless" id = "fat flat chainskirt armor bottom second" src="img/armour chain skirt lowlights fat.png" />
+			<img class = "useless" id = "buff boobs sophias armor legs armor bottom second" src="img/armour sophias legs buff cloth.png" />
+			<img class = "useless" id = "buff flat sophias armor legs armor bottom second" src="img/armour sophias legs buff cloth.png" />
+			<img class = "useless" id = "fat boobs sophias armor legs armor bottom second" src="img/armour sophias legs fat cloth.png" />
+			<img class = "useless" id = "fat flat sophias armor legs armor bottom second" src="img/armour sophias legs fat cloth.png" />
+			<!--<img class = "useless" id = "no secondary armor bottom color" src="img/no secondary armor bottom pattern.png" />-->
+			
+		<!--armour tretiaries/highlights-->
+			<img class = "useless" id = "buff boobs chainskirt armor bottom third" src="img/armour chain skirt highlights buff.png" />
+			<img class = "useless" id = "buff flat chainskirt armor bottom third" src="img/armour chain skirt highlights buff.png" />
+			<img class = "useless" id = "fat boobs chainskirt armor bottom third" src="img/armour chain skirt highlights fat.png" />
+			<img class = "useless" id = "fat flat chainskirt armor bottom third" src="img/armour chain skirt highlights fat.png" /> 
+			<img class = "useless" id = "buff boobs sophias armor legs armor bottom third" src="img/armour sophias legs buff trim color.png" />
+			<img class = "useless" id = "buff flat sophias armor legs armor bottom third" src="img/armour sophias legs buff trim color.png" />
+			<img class = "useless" id = "fat boobs sophias armor legs armor bottom third" src="img/armour sophias legs fat trim color.png" />
+			<img class = "useless" id = "fat flat sophias armor legs armor bottom third" src="img/armour sophias legs fat trim color.png" />
+			<!--<img class = "useless" id = "no third armor bottom color" src="img/no third armor bottom pattern.png" />-->
+			
+		<!--armour limbs-->
+			<img class = "useless" id = "buff boobs armored gloves" src="img/armour armorued gloves metal.png" />
+			<img class = "useless" id = "buff flat armored gloves" src="img/armour armorued gloves metal.png" />
+			<img class = "useless" id = "fat boobs armored gloves" src="img/armour armorued gloves metal.png" />
+			<img class = "useless" id = "fat flat armored gloves" src="img/armour armorued gloves metal.png" />
+			<img class = "useless" id = "buff boobs feet coverings" src="img/armour feet coverings.png" />
+			<img class = "useless" id = "buff flat feet coverings" src="img/armour feet coverings.png" />
+			<img class = "useless" id = "fat boobs feet coverings" src="img/armour feet coverings.png" />
+			<img class = "useless" id = "fat flat feet coverings" src="img/armour feet coverings.png" />
+			<img class = "useless" id = "buff boobs forearm guards" src="img/armour forearm guards primary.png" />
+			<img class = "useless" id = "buff flat forearm guards" src="img/armour forearm guards primary.png" />
+			<img class = "useless" id = "fat boobs forearm guards" src="img/armour forearm guards primary.png" />
+			<img class = "useless" id = "fat flat forearm guards" src="img/armour forearm guards primary.png" />
+			<img class = "useless" id = "buff boobs shin coverings" src="img/armour shin pads buff primary color.png" />
+			<img class = "useless" id = "buff flat shin coverings" src="img/armour shin pads buff primary color.png" />
+			<img class = "useless" id = "fat boobs shin coverings" src="img/armour shin pads fat primary color.png" />
+			<img class = "useless" id = "fat flat shin coverings" src="img/armour shin pads fat primary color.png" />
+			<img class = "useless" id = "buff boobs shoulder pads large" src="img/armour shoulder pads big primary color.png" />
+			<img class = "useless" id = "buff flat shoulder pads large" src="img/armour shoulder pads big primary color.png" />
+			<img class = "useless" id = "fat boobs shoulder pads large" src="img/armour shoulder pads big primary color.png" />
+			<img class = "useless" id = "fat flat shoulder pads large" src="img/armour shoulder pads big primary color.png" />
+			<img class = "useless" id = "buff boobs shoulder pads small" src="img/armour shoulder pads small primary.png" />
+			<img class = "useless" id = "buff flat shoulder pads small" src="img/armour shoulder pads small primary.png" />
+			<img class = "useless" id = "fat boobs shoulder pads small" src="img/armour shoulder pads small primary.png" />
+			<img class = "useless" id = "fat flat shoulder pads small" src="img/armour shoulder pads small primary.png" />
+			<img class = "useless" id = "no limb armor" src="img/no limb armor.png" />
+			
+		<!-- armour limbs secondary colors -->
+			<img class = "useless" id = "buff boobs armored gloves armor limb trim" src="img/armour armoured gloves cloth color.png" />
+			<img class = "useless" id = "buff flat armored gloves armor limb trim" src="img/armour armoured gloves cloth color.png" />
+			<img class = "useless" id = "fat boobs armored gloves armor limb trim" src="img/armour armoured gloves cloth color.png" />
+			<img class = "useless" id = "fat flat armored gloves armor limb trim" src="img/armour armoured gloves cloth color.png" />
+			<img class = "useless" id = "buff boobs feet coverings armor limb trim" src="img/armour feet coverings secondary.png" />
+			<img class = "useless" id = "buff flat feet coverings armor limb trim" src="img/armour feet coverings secondary.png" />
+			<img class = "useless" id = "fat boobs feet coverings armor limb trim" src="img/armour feet coverings secondary.png" />
+			<img class = "useless" id = "fat flat feet coverings armor limb trim" src="img/armour feet coverings secondary.png" />
+			<img class = "useless" id = "buff boobs forearm guards armor limb trim" src="img/armour forearm guards secondary.png" />
+			<img class = "useless" id = "buff flat forearm guards armor limb trim" src="img/armour forearm guards secondary.png" />
+			<img class = "useless" id = "fat boobs forearm guards armor limb trim" src="img/armour forearm guards secondary.png" />
+			<img class = "useless" id = "fat flat forearm guards armor limb trim" src="img/armour forearm guards secondary.png" />
+			<img class = "useless" id = "buff boobs shin coverings armor limb trim" src="img/armour shin pads buff secondary colors.png" />
+			<img class = "useless" id = "buff flat shin coverings armor limb trim" src="img/armour shin pads buff secondary colors.png" />
+			<img class = "useless" id = "fat boobs shin coverings armor limb trim" src="img/armour shin pads secondary color fat.png" />
+			<img class = "useless" id = "fat flat shin coverings armor limb trim" src="img/armour shin pads secondary color fat.png" />
+			<img class = "useless" id = "buff boobs shoulder pads large armor limb trim" src="img/armour shoulder pads big secondary color.png" />
+			<img class = "useless" id = "buff flat shoulder pads large armor limb trim" src="img/armour shoulder pads big secondary color.png" />
+			<img class = "useless" id = "fat boobs shoulder pads large armor limb trim" src="img/armour shoulder pads big secondary color.png" />
+			<img class = "useless" id = "fat flat shoulder pads large armor limb trim" src="img/armour shoulder pads big secondary color.png" />
+			<img class = "useless" id = "buff boobs shoulder pads small armor limb trim" src="img/armour shoulder pads small secondary.png" />
+			<img class = "useless" id = "buff flat shoulder pads small armor limb trim" src="img/armour shoulder pads small secondary.png" />
+			<img class = "useless" id = "fat boobs shoulder pads small armor limb trim" src="img/armour shoulder pads small secondary.png" />
+			<img class = "useless" id = "fat flat shoulder pads small armor limb trim" src="img/armour shoulder pads small secondary.png" />
+			<!--<img class = "useless" id = "no secondary limb color" src="img/no secondary limb pattern.png" />-->
+			
+		<!--belts-->
+			<img class = "useless" id = "buff boobs hip belt" src="img/belts hip belt buff.png" />
+			<img class = "useless" id = "buff flat hip belt" src="img/belts hip belt buff.png" />
+			<img class = "useless" id = "fat boobs hip belt" src="img/belts hip belt fat.png" />
+			<img class = "useless" id = "fat flat hip belt" src="img/belts hip belt fat.png" />
+			<img class = "useless" id = "buff boobs loose belt" src="img/belts loose belt buff primary.png" />
+			<img class = "useless" id = "buff flat loose belt" src="img/belts loose belt buff primary.png" />
+			<img class = "useless" id = "buff boobs waist belt" src="img/belts waist belt buff.png" />
+			<img class = "useless" id = "buff flat waist belt" src="img/belts waist belt buff.png" />
+			<img class = "useless" id = "fat boobs waist belt" src="img/belts wais belt fat.png" />
+			<img class = "useless" id = "fat flat waist belt" src="img/belts wais belt fat.png" />
+			<img class = "useless" id = "fat boobs loose belt" src="img/ belts loose belt fat body primary color.png" />
+			<img class = "useless" id = "fat flat loose belt" src="img/ belts loose belt fat body primary color.png" />
+		
+		<!--belts studs-->
+			<img class = "useless" id = "buff boobs loose belt studs" src="img/belts loose belt buff studds.png" />
+			<img class = "useless" id = "buff flat loose belt studs" src="img/belts loose belt buff studds.png" />
+			<img class = "useless" id = "fat boobs loose belt studs" src="img/belts loose belt fat studs.png" />
+			<img class = "useless" id = "fat flat loose belt studs" src="img/belts loose belt fat studs.png" />
+		
+		<!--mobility devices-->
+			<img class = "useless" id = "fat boobs ankle braces" src="img/accessories ankel braces fat base color.png" />
+			<img class = "useless" id = "fat flat ankle braces" src="img/accessories ankel braces fat base color.png" />
+			<img class = "useless" id = "buff boobs ankle braces" src="img/accessories ankle braces thin base color.png" />
+			<img class = "useless" id = "buff flat ankle braces" src="img/accessories ankle braces thin base color.png" />
+			<img class = "useless" id = "buff boobs elbow braces" src="img/accessories elbow braces buff base color.png" />
+			<img class = "useless" id = "buff flat elbow braces" src="img/accessories elbow braces buff base color.png" />
+			<img class = "useless" id = "fat boobs elbow braces" src="img/accessories elbow braces fat base color.png" />
+			<img class = "useless" id = "fat flat elbow braces" src="img/accessories elbow braces fat base color.png" />
+			<img class = "useless" id = "fat boobs knee braces" src="img/accessories knee braces fat base color.png" />
+			<img class = "useless" id = "fat flat knee braces" src="img/accessories knee braces fat base color.png" />
+			<img class = "useless" id = "buff boobs knee braces" src="img/accessories knee braces thin base color.png" />
+			<img class = "useless" id = "buff flat knee braces" src="img/accessories knee braces thin base color.png" />
+			<img class = "useless" id = "buff boobs wrist braces" src="img/accessories wrist braces base color.png" />
+			<img class = "useless" id = "buff flat wrist braces" src="img/accessories wrist braces base color.png" />
+			<img class = "useless" id = "fat boobs wrist braces" src="img/accessories wrist braces base color.png" />
+			<img class = "useless" id = "fat flat wrist braces" src="img/accessories wrist braces base color.png" />
+		<!-- mobility devices secondary color-->
+			<img class = "useless" id = "fat boobs ankle braces lights" src="img/accessories ankle braces fat highlihgts.png" />
+			<img class = "useless" id = "fat flat ankle braces lights" src="img/accessories ankle braces fat highlihgts.png" />
+			<img class = "useless" id = "buff boobs ankle braces lights" src="img/accessories ankle braces thin highlgihts.png" />
+			<img class = "useless" id = "buff flat ankle braces lights" src="img/accessories ankle braces thin highlgihts.png" />
+			<img class = "useless" id = "buff boobs elbow braces light" src="img/accessories elbow braces buff highlights.png" />
+			<img class = "useless" id = "buff flat elbow braces light" src="img/accessories elbow braces buff highlights.png" />
+			<img class = "useless" id = "fat boobs elbow braces light" src="img/accessories elbow braces fat highlights.png" />
+			<img class = "useless" id = "fat flat elbow braces light" src="img/accessories elbow braces fat highlights.png" />
+			<img class = "useless" id = "fat boobs knee braces light" src="img/accessories knee braces fat highlights.png" />
+			<img class = "useless" id = "fat flat knee braces light" src="img/accessories knee braces fat highlights.png" />
+			<img class = "useless" id = "buff boobs knee braces light" src="img/accessories knee braces thin highlights.png" />
+			<img class = "useless" id = "buff flat knee braces light" src="img/accessories knee braces thin highlights.png" />
+			<img class = "useless" id = "buff boobs wrist braces light" src="img/accessories wrist braces highlights.png" />
+			<img class = "useless" id = "buff fat wrist braces light" src="img/accessories wrist braces highlights.png" />
+			<img class = "useless" id = "fat boobs wrist braces light" src="img/accessories wrist braces highlights.png" />
+			<img class = "useless" id = "fat flat wrist braces light" src="img/accessories wrist braces highlights.png" />
+		<!--coats-->
+			<img class = "useless" id = "fat boobs furry coat" src="img/coats fuzzy coat fat boobs.png" />
+			<img class = "useless" id = "buff boobs furry coat" src="img/coats fuzzy coat primary colors buff boobs.png" />
+			<img class = "useless" id = "buff flat furry coat" src="img/coats fuzzy coat primary colors buff flat.png" />
+			<img class = "useless" id = "fat flat furry coat" src="img/coats fuzzy coat primary colors fat flat.png" />
+			<img class = "useless" id = "fat boobs isildas coat" src="img/coats isildas coat fat boobs.png" />
+			<img class = "useless" id = "buff boobs isildas coat" src="img/coats isildas coat primary colors buff boobs.png" />
+			<img class = "useless" id = "buff flat isildas coat" src="img/coats isildas coat primary colors buff flat.png" />
+			<img class = "useless" id = "fat flat isildas coat" src="img/coats isildas coat primary colors fat flat.png" />
+			<img class = "useless" id = "buff boobs rain coat" src="img/coats raincoat buff boobs.png" />
+			<img class = "useless" id = "buff flat rain coat" src="img/coats raincoat buff flat.png" />
+			<img class = "useless" id = "fat boobs rain coat" src="img/coats raincoat fat boobs.png" />
+			<img class = "useless" id = "fat flat rain coat" src="img/coats raincoat fat flat.png" />
+			<img class = "useless" id = "buff boobs sashkas coat" src="img/coats sashkas coat buff boobs.png" />
+			<img class = "useless" id = "buff flat sashkas coat" src="img/coats sashkas coat buff flat.png" />
+			<img class = "useless" id = "fat boobs sashksa coat" src="img/coats sashkas coat fat boobs.png" />
+			<img class = "useless" id = "fat flat sashkas coat" src="img/coats sashkas coat fat flat.png" />
+			<img class = "useless" id = "fat boobs trenchcoat" src="img/coats trech coat fat boobs.png" />
+			<img class = "useless" id = "fat flat trenchcoat" src="img/coats trech coat fat flat.png" />
+			<img class = "useless" id = "buff boobs trenchcoat" src="img/coats trench coat buff boobs.png" />
+			<img class = "useless" id = "buff flat trenchcoat" src="img/coats trench coat buff flat.png" />
+			<img class = "useless" id = "buff boobs poofy coat" src="img/coats winter coat buff boobs.png" />
+			<img class = "useless" id = "buff flat poofy coat" src="img/coats winter coat buff flat.png" />
+			<img class = "useless" id = "fat boobs poofy coat" src="img/coats winter coat fat boobs.png" />
+			<img class = "useless" id = "fat flat poofy coat" src="img/coats winter coat fat flat.png" />
+			<!--<img class = "useless" id = "no coat" src="img/no coat.png" />-->
+			
+			
+		<!--coats secondary colors-->
+			<img class = "useless" id = "buff boobs furry coat coat trim" src="img/coats fuzzy coat secondary colors buff boobs.png" />
+			<img class = "useless" id = "buff flat furry coat coat trim" src="img/coats fuzzy coat secondary colors buff flat.png" />
+			<img class = "useless" id = "fat boobs furry coat coat trim" src="img/coats fuzzy coat secondary colors fat boobs.png" />
+			<img class = "useless" id = "fat flat furry coat coat trim" src="img/coats fuzzy coat secondary colors fat flat.png" />
+			<img class = "useless" id = "buff boobs isildas coat coat trim" src="img/coats isildas coat secondary colors buff boobs.png" />
+			<img class = "useless" id = "buff flat isildas coat coat trim" src="img/coats isildas coat secondary colors buff flat.png" />
+			<img class = "useless" id = "fat boobs isildas coat coat trim" src="img/coats isildas coat secondary colors fat boobs.png" />
+			<img class = "useless" id = "fat flat isildas coat coat trim" src="img/coats isildas coat secondary colors fat flat.png" />
+			<!--<img class = "useless" id = "no coat secondary" src="img/no coat secondary.png" />-->
+			
+		<!-- bangs-->
+			<img class = "useless" id = "bangs claras" src="img/claras hair copy.png" />
+			<img class = "useless" id = "bangs cornrows" src="img/cornrows start.png" />
+			<img class = "useless" id = "bangs dreadlocks" src="img/dreadlocks start.png" />
+			<img class = "useless" id = "bangs jessies" src="img/jessies hair.png" />
+			<img class = "useless" id = "bangs loose curly" src="img/loose bangs.png" />
+			<img class = "useless" id = "bangs microbraids" src="img/microbraid bangs.png" />
+			<img class = "useless" id = "bangs fringe" src="img/straight fringe.png" />
+			<img class = "useless" id = "bangs straight off to one side" src="img/straight off to one side.png" />
+			<img class = "useless" id = "bangs straight peekaboo" src="img/straight peeka boo.png" />
+			<img class = "useless" id = "bangs wavy off to one side" src="img/wavy off to one side.png" />
+			<img class = "useless" id = "bangs wavy peekaboo" src="img/wavy peek aboo.png" />
+			<!--<img class = "useless" id = "no bangs" src="img/no bangs.png" />-->
+			<img class = "useless" id = "hair afro" src="img/afro front.png" />
+		
+		<!--accessories-->
+			<img class = "useless" id = "bracers" src="img/accessories bracers.png" />
+			<img class = "useless" id = "loose braclets" src="img/accessories loose bracelets.png" />
+			<img class = "useless" id = "loose necklace" src="img/accessories loose necklace.png" />
+			<img class = "useless" id = "sashkas necklace" src="img/accessories sashkas necklace.png" />
+			<img class = "useless" id = "scarf" src="img/accessories scarf.png" />
+			
+		<!-- body dependent accessories-->
+			<img class = "useless" id = "buff boobs choker" src="img/accessories choker buff.png" />
+			<img class = "useless" id = "buff flat choker" src="img/accessories choker buff.png" />
+			<img class = "useless" id = "fat boobs choker" src="img/accessories choker fat.png" />
+			<img class = "useless" id = "fat flat choker" src="img/accessories choker fat.png" />
+			
+		<!-- ear dependent accessories-->
+			<img class = "useless" id = "ears cat down small earrings" src="img/accessories earrings small cat ears.png" />
+			<img class = "useless" id = "ears cat up small earrings" src="img/accessories earrings small cat ears.png" />
+			<img class = "useless" id = "ears wolf down small earrings" src="img/accessories earrings small cat ears.png" />
+			<img class = "useless" id = "ears wolf up small earrings" src="img/accessories earrings small cat ears.png" />
+			<img class = "useless" id = "ears lynx down small earrings" src="img/accessories earrings small cat ears.png" />
+			<img class = "useless" id = "ears lynx up small earrings" src="img/accessories earrings small cat ears.png" />
+			<img class = "useless" id = "ears otter small earrings" src="img/accessories earrings small otter.png" />
+			<img class = "useless" id = "ears cat down loopy earrings" src="img/accessories loopy earrings cat.png" />
+			<img class = "useless" id = "ears cat up loopy earrings" src="img/accessories loopy earrings cat.png" />
+			<img class = "useless" id = "ears wolf down loopy earrings" src="img/accessories loopy earrings cat.png" />
+			<img class = "useless" id = "ears wolf up loopy earrings" src="img/accessories loopy earrings cat.png" />
+			<img class = "useless" id = "ears lynx down loopy earrings" src="img/accessories loopy earrings cat.png" />
+			<img class = "useless" id = "ears lynx up loopy earrings" src="img/accessories loopy earrings cat.png" />
+			<img class = "useless" id = "ears otter loopy earrings" src="img/accessories loopy earrings otters.png" />
+		<!-- canes-->
+			<img class = "useless" id = "four point cane" src="img/accessories four point cane.png" />
+			<img class = "useless" id = "normal cane" src="img/accessories normal cane.png" />
+			
+			
+		<!--weapons-->
+			<img class = "useless" id = "dagger up hand" src="img/weapons dagger real sharp.png" />
+			<img class = "useless" id = "godsmasher hammer" src="img/weapons godsmasher base color.png" />
+			<img class = "useless" id = "knives" src="img/weapons knives.png" />
+			<img class = "useless" id = "magic dagger down hand" src="img/weapons magic dagger down hand.png" />
+			<img class = "useless" id = "magic dagger up hand" src="img/weapons magic dagger up hand.png" />
+			<img class = "useless" id = "magic hammer" src="img/weapons magic hammar.png" />
+			<img class = "useless" id = "magic katar" src="img/weapons magic katar.png" />
+			<img class = "useless" id = "magci mace" src="img/weapons magic mace.png" />
+			<img class = "useless" id = "magic shield" src="img/weapons magic shield.png" />
+			<img class = "useless" id = "magic spear" src="img/weapons magic spear.png" />
+			<img class = "useless" id = "magic sword down hand" src="img/weapons magic sword down hand.png" />
+			<img class = "useless" id = "magic sword up hand" src="img/weapons magic sword up hand.png" />
+			<img class = "useless" id = "magic whip down hand" src="img/weapons magic whip down hand.png" />
+			<img class = "useless" id = "magic whip up hand" src="img/weapons magic whip up hand.png" />
+			<img class = "useless" id = "pistol" src="img/weapons pistol.png" />
+			<img class = "useless" id = "magic scimitar down hand" src="img/weapons scimitar down hand.png" />
+			<img class = "useless" id = "magic scimitar up hand" src="img/weapons scimitar up hand.png" />
+			<img class = "useless" id = "shield" src="img/weapons shield base.png" />
+			<img class = "useless" id = "spear" src="img/weapons spear point.png" />
+			<img class = "useless" id = "sword" src="img/weapons sword blade.png" />
+			
+		<!--weapons second color-->
+			<img class = "useless" id = "dagger up hand hilt" src="img/weapons dagger real.png" />
+			<img class = "useless" id = "godsmasher hammer hilt" src="img/weapons godsmasher trim.png" />
+			<img class = "useless" id = "shield hilt" src="img/weapons shield strap.png" />
+			<img class = "useless" id = "spear hilt" src="img/weapons spear wood.png" />
+			<img class = "useless" id = "sword hilt" src="img/weapons sword hilt.png" />
+			
+		<!-- weapons gems-->
+			<img class = "useless" id = "shield gem" src="img/weapons shield gem.png" />
+			<img class = "useless" id = "spear gem" src="img/weapons spear fluff.png" />
+			<img class = "useless" id = "sword gem" src="img/weapons sword gem.png" />
+		<!--braid-->
+			<img class = "useless" id = "braid" src="img/braid.png" />
+			<!--<img class = "useless" id = "no ponytail" src="img/no ponytail.png" />-->
+		
+		<!--emotions-->
+			<img class = "useless" id = "anger" src="img/emotion anger.png" />
+			<img class = "useless" id = "sweat" src="img/emotion anime sweat.png" />
+			<img class = "useless" id = "heavy blush" src="img/emotion blush heavy.png" />
+			<img class = "useless" id = "light blush" src="img/emotion blush light.png" />
+			<img class = "useless" id = "hearts" src="img/emotion hearts.png" />
+			<img class = "useless" id = "scribbly" src="img/emotion scribbly.png"/>
+			
+		</div>
+
+		</body>
+	
+</html>

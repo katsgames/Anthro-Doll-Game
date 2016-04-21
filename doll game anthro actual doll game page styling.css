@@ -1,0 +1,55 @@
+head {
+	background-color: #AD9680;
+}
+
+body {
+	background-color: #AD9680;
+}
+
+
+div {
+	display: inline-block;
+	width: 200px;
+	height: 20px;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	background-color: blue;
+	
+}
+
+a {
+	text-decoration: none; 
+	color: black; 
+}
+
+h1 {
+	position: relative; 
+}
+
+#myCanvas {
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	width:350px;
+	height:500px;
+	display: inline-block; 
+	/*float: left; */
+}
+/*
+.tab {
+	display:none;
+}
+
+.tab.active {
+    display:block;
+}
+*/
+ul {
+	display: inline-block;
+	margin-left: 5em; 
+	
+}
+.useless {
+	display: none;
+}
